@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="commersys" translate="label" sortOrder="10">
+            <label>Commersys</label>
+        </tab>
+        <section id="core" translate="label" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Extensions Info</label>
+            <tab>commersys</tab>
+            <resource>Commersys_Core::core_config</resource>
+            <group id="commersys_menu" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Left Navigation Menu</label>
+                <field id="enable_menu" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Menu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="extensions_installed" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Installed Extensions</label>
+                <frontend_model>Commersys\Core\Block\Adminhtml\Extensions</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>

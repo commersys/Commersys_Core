@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Commersys_Core::commersys_core" title="Commersys" translate="title" module="Commersys_Core" sortOrder="51" dependsOnConfig="core/commersys_menu/enable_menu" resource="Commersys_Core::core_config"/>
+        <add id="Commersys_Core::core_menu_config" title="Core Settings" translate="title" module="Commersys_Core" sortOrder="90" parent="Commersys_Core::commersys_core" dependsOnModule="Commersys_Core" resource="Commersys_Core::core_config"/>
+        <add id="Commersys_Core::core_configuration" title="Configuration" module="Commersys_Core" sortOrder="99" parent="Commersys_Core::core_menu_config" action="adminhtml/system_config/edit/section/core" resource="Commersys_Core::core_config"/>
+    </menu>
+</config>

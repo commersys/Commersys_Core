@@ -1,0 +1,33 @@
+{
+  "name": "commersys/core",
+  "description": "Commersys Core",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0"
+  ],
+  "require": {
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "keywords" : [
+    "commersys",
+    "core",
+    "magento2",
+    "magento 2"
+  ],
+  "authors" : [{
+    "name" : "Commersys",
+    "email" : "team@commersys.com",
+    "homepage" : "https://www.commersys.com/"
+  }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Commersys\\Core\\": ""
+    }
+  }
+}
